@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens 3D</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles_imagem.css">
+</head>
+<body>
+
+    <h1>Galeria de Imagens 3D</h1>
+
+    <div class="caixa">
+
+        <span style="--i:1;">
+            <img src="imgs/carro1.jpg" alt="Carro 1" onclick="abrirImagem('imgs/carro1.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:2;">
+            <img src="imgs/carro2.jpg" alt="Carro 2" onclick="abrirImagem('imgs/carro2.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:3;">
+            <img src="imgs/carro3.jpg" alt="Carro 3" onclick="abrirImagem('imgs/carro3.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:4;">
+            <img src="imgs/carro4.jpg" alt="Carro 4" onclick="abrirImagem('imgs/carro4.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:5;">
+            <img src="imgs/carro5.jpg" alt="Carro 5" onclick="abrirImagem('imgs/carro5.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:6;">
+            <img src="imgs/carro6.jpg" alt="Carro 6" onclick="abrirImagem('imgs/carro6.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:7;">
+            <img src="imgs/carro7.jpg" alt="Carro 7" onclick="abrirImagem('imgs/carro7.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:8;">
+            <img src="imgs/carro8.jpg" alt="Carro 8" onclick="abrirImagem('imgs/carro8.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:9;">
+            <img src="imgs/carro9.jpg" alt="Carro 9" onclick="abrirImagem('imgs/carro9.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:10;">
+            <img src="imgs/carro10.jpg" alt="Carro 10" onclick="abrirImagem('imgs/carro10.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:11;">
+            <img src="imgs/carro11.jpg" alt="Carro 11" onclick="abrirImagem('imgs/carro11.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+        <span style="--i:12;">
+            <img src="imgs/carro12.jpg" alt="Carro 12" onclick="abrirImagem('imgs/carro12.jpg','este é um carro esportivo')">
+            <p>Carro esportivo</p>
+        </span>
+
+
+    </div>
+
+    <Script>
+        
+        function abrirImagem(imagem,descricao){
+            let url = `index.html?imagem=${imagem}&descricao=${encodeURIComponent(descricao)}`
+            window.open(url, '_blank')
+        }
+
+    </Script>
+    
+</body>
+</html>
