@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Imagens 3D</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="styles_imagem.css">
+    
 </head>
 <body>
 
@@ -14,7 +14,7 @@
     <div class="caixa">
 
         <span style="--i:1;">
-            <img src="imgs/carro1.jpg" alt="Carro 1" onclick="abrirImagem('imgs/carro1.jpg','este é um carro esportivo')">
+            <img src="imgs/carro1.jpg" alt="Carro 1" onclick="abrirImagem('carro1.jpg','este é um carro esportivo')">
             <p>Carro esportivo</p>
         </span>
 
@@ -65,7 +65,7 @@
 
         <span style="--i:11;">
             <img src="imgs/carro11.jpg" alt="Carro 11" onclick="abrirImagem('imgs/carro11.jpg','este é um carro esportivo')">
-            <p>Carro esportivo</p>
+            <p>teste</p>
         </span>
 
         <span style="--i:12;">
@@ -79,7 +79,7 @@
     <Script>
         
         function abrirImagem(imagem,descricao){
-            let url = `index.html?imagem=${imagem}&descricao=${encodeURIComponent(descricao)}`
+            let url = `imagem.html?imagem=${imagem}&descricao=${encodeURIComponent(descricao)}`
             window.open(url, '_blank')
         }
 
